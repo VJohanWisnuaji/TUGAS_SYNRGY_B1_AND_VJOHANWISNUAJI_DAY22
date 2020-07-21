@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95212036" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical2"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_scroll"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Guideline Foto profil -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.15085158" />
+
+
+            <!--  Guideline untuk text posts, followers, following  -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.40145984" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.60097325" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.8004866" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_horizontal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="73dp" />
+
+            <!--  Guideline icon ganti foto profil  -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.24087591" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_horizontal_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="110dp" />
+
+            <!--  Guideline Nama dan Bio  -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.04136253" />
+
+            <!--  Guideline Highlight  -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_horizontal_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="256dp" />
+
+            <!--  Guideline Feed n Tag  -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.50121653" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_horizontal_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="329dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_horizontal_tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="366dp" />
+
+            <!--  Guideline Feed  -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.32603407" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_feed2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6666667" />
+
+
+            <ImageView
+                android:id="@+id/iv_photo_profil"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_person_24"
+                app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal1"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical1"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical1"
+                app:layout_constraintTop_toTopOf="@id/guideline_horizontal1" />
+
+            <TextView
+                android:id="@+id/tv_posts_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tv_posts"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_posts"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_posts" />
+
+            <TextView
+                android:id="@+id/tv_posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posts"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_posts"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_posts"
+                app:layout_constraintTop_toTopOf="@id/guideline_horizontal1" />
+
+            <TextView
+                android:id="@+id/tv_followers_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="179"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tv_followers"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_followers"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_followers" />
+
+            <TextView
+                android:id="@+id/tv_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_followers"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_followers"
+                app:layout_constraintTop_toTopOf="@id/guideline_horizontal1" />
+
+            <TextView
+                android:id="@+id/tv_following_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="187"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/tv_following"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_following"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_following" />
+
+            <TextView
+                android:id="@+id/tv_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_following"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_following"
+                app:layout_constraintTop_toTopOf="@id/guideline_horizontal1" />
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_icon"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_icon"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_icon"
+                app:layout_constraintTop_toTopOf="@id/guideline_horizontal_icon"
+                app:srcCompat="@drawable/ic_baseline_add_24" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vinsensius Johan Wisnuaji"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_name"
+                app:layout_constraintTop_toBottomOf="@id/iv_photo_profil" />
+
+            <TextView
+                android:id="@+id/tv_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mechanical Engineering"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+            <Button
+                android:id="@+id/btn_edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginVertical="16dp"
+                android:text="Edit Profile"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_bio" />
+
+            <ImageView
+                android:id="@+id/iv_highlight"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_outline_add_circle_outline_24"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_name"
+                app:layout_constraintTop_toBottomOf="@id/btn_edit_profile" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="New"
+                app:layout_constraintEnd_toEndOf="@id/iv_highlight"
+                app:layout_constraintStart_toStartOf="@id/iv_highlight"
+                app:layout_constraintTop_toBottomOf="@id/iv_highlight" />
+
+
+            <ImageView
+                android:id="@+id/iv_highlight2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/highlight_1"
+                app:layout_constraintStart_toEndOf="@id/iv_highlight"
+                app:layout_constraintTop_toBottomOf="@id/btn_edit_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="This"
+                app:layout_constraintEnd_toEndOf="@id/iv_highlight2"
+                app:layout_constraintStart_toStartOf="@id/iv_highlight2"
+                app:layout_constraintTop_toBottomOf="@id/iv_highlight2" />
+
+            <ImageView
+                android:id="@+id/iv_grid"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#9EACABAB"
+                android:paddingVertical="4dp"
+                android:src="@drawable/ic_baseline_grid_on_24"
+                app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_tag2"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_tag"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/guideline_horizontal_tag" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#9EACABAB"
+                android:paddingVertical="4dp"
+                android:src="@drawable/ic_outline_tag"
+                app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_tag2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_tag"
+                app:layout_constraintTop_toTopOf="@id/guideline_horizontal_tag" />
+
+
+            <!-- Image Feed  -->
+            <ImageView
+                android:id="@+id/iv_feed1"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/feed_1"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_feed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_grid" />
+
+            <ImageView
+                android:id="@+id/iv_feed2"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_feed2"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_feed"
+                app:layout_constraintTop_toTopOf="@id/iv_feed1"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/iv_feed3"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_feed2"
+                app:layout_constraintTop_toTopOf="@id/iv_feed2"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/iv_feed4"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_feed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_feed1"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/iv_feed5"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_feed2"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_feed"
+                app:layout_constraintTop_toBottomOf="@id/iv_feed2"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/iv_feed6"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_feed2"
+                app:layout_constraintTop_toBottomOf="@id/iv_feed3"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+            <ImageView
+                android:id="@+id/iv_feed7"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_feed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_feed4"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/iv_feed8"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_feed2"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_feed"
+                app:layout_constraintTop_toBottomOf="@id/iv_feed5"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/iv_feed9"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_feed2"
+                app:layout_constraintTop_toBottomOf="@id/iv_feed6"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/iv_feed10"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_feed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_feed7"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/iv_feed11"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_feed2"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_feed"
+                app:layout_constraintTop_toBottomOf="@id/iv_feed8"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/iv_feed12"
+                android:layout_width="0dp"
+                android:layout_height="128dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_feed2"
+                app:layout_constraintTop_toBottomOf="@id/iv_feed9"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_nav2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_nav3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_nav4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".8" />
+
+    <ImageView
+        android:id="@+id/iv_home"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#989696"
+        android:src="@drawable/ic_outline_home_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_scroll" />
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#989696"
+        android:src="@drawable/ic_outline_search_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_nav2"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_nav"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_scroll" />
+
+    <ImageView
+        android:id="@+id/iv_add_nav"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#989696"
+        android:src="@drawable/ic_outline_add_box_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_nav3"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_nav2"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_scroll" />
+
+    <ImageView
+        android:id="@+id/iv_love"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#989696"
+        android:src="@drawable/ic_outline_love"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_nav4"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_nav3"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_scroll" />
+
+    <ImageView
+        android:id="@+id/iv_me"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#989696"
+        android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_nav4"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_scroll" />
+</androidx.constraintlayout.widget.ConstraintLayout>
